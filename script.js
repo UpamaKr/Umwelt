@@ -1,22 +1,3 @@
-// const items = document.querySelectorAll(".item");
-
-// items.forEach((item) => {
-//   item.addEventListener("click", () => {
-//     const openItem = document.querySelector(".open");
-//     if (openItem && openItem !== item) {
-//       openItem.classList.remove("open");
-//     }
-//     item.classList.toggle("open");
-//   });
-// });
-
-///make mobile navigation work////////////////////////////////////
-// const btnNavEl = document.querySelector(".btn-mobile-nav");
-// const headerEl = document.querySelector(".header");
-// btnNavEl.addEventListener("click", function () {
-//   headerEl.classList.toggle("nav-open");
-// });
-
 const icons = document.querySelectorAll(".icon");
 icons.forEach((icon) => {
   icon.addEventListener("click", () => {
@@ -72,4 +53,14 @@ buttons.forEach((button, index) => {
 });
 
 // JavaScript
-/
+// const btnMobileNav = document.querySelector(".btn-mobile-nav");
+// const iconMenu = document.querySelector("ion-icon[name='menu-outline']");
+// const iconClose = document.querySelector("ion-icon[name='close-outline']");
+// const mainElement = document.querySelector("main");
+
+// // Hide the main element initially
+// mainElement.classList.add("hidden");
+
+// btnMobileNav.addEventListener("click", function () {
+//   mainElement.classList.toggle("hidden");
+// });
