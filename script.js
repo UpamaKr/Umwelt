@@ -10,6 +10,13 @@
 //   });
 // });
 
+///make mobile navigation work////////////////////////////////////
+// const btnNavEl = document.querySelector(".btn-mobile-nav");
+// const headerEl = document.querySelector(".header");
+// btnNavEl.addEventListener("click", function () {
+//   headerEl.classList.toggle("nav-open");
+// });
+
 const icons = document.querySelectorAll(".icon");
 icons.forEach((icon) => {
   icon.addEventListener("click", () => {
@@ -63,3 +70,6 @@ buttons.forEach((button, index) => {
     }
   });
 });
+
+// JavaScript
+/

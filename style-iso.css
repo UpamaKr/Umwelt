@@ -187,3 +187,44 @@ li::before {
   margin-top: 0;
   padding-top: 0;
 }
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+@media screen and (max-width: 480px) {
+  /* styles for mobile devices */
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  .accordian {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  div {
+    margin: 0;
+    padding: 0;
+  }
+
+  .number,
+  .text {
+    font-size: 18px;
+    font-weight: 200;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    /* color: #087f5b; */
+  }
+  .translation {
+    padding: 0;
+    margin: 0;
+  }
+
+  /* .hidden-box {
+    grid-column: 1;
+  } */
+}
