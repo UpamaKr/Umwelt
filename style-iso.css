@@ -53,13 +53,14 @@ GREY COLOUR: #343a40
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 0;
 }
 
 .main-nav-list {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 4.8rem;
+  gap: 32px;
 }
 
 .main-nav-link:link,
@@ -105,6 +106,49 @@ GREY COLOUR: #343a40
   margin-top: 9.6rem;
 }
 
+/* HERO SECTION */
+/* CSS */
+/* CSS */
+.section-hero {
+  background-color: #99cc99;
+  padding: 9.6rem 0;
+}
+.hero {
+  /* Add styles to position the hero content */
+  max-width: 900px;
+  margin: 0 auto;
+  gap: 8.6rem;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.hero-img {
+  /* Add styles to size the hero image */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* CSS */
+
+.heading-primary {
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+  letter-spacing: -0.5px;
+  color: #333;
+}
+.hero-description {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 48px;
+}
+
+/* CSS */
+
 /* GENERAL STYLING */
 h4 {
   margin-bottom: 24px;
@@ -125,7 +169,7 @@ li::before {
   margin-right: 12px;
 }
 .accordian {
-  width: 700px;
+  max-width: 1300px;
   margin: 10px auto;
   display: flex;
   flex-direction: column;
@@ -255,6 +299,8 @@ li::before {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
+.hbtn:link,
+.hbtn:visited,
 .translate-button:link,
 .translate-button:visited {
   display: inline-block;
@@ -268,6 +314,8 @@ li::before {
   transition: all 0.3s;
 }
 
+.hbtn:hover,
+.hbtn:active,
 .translate-button:hover,
 .translate-button:active {
   background-color: #862e9c;
@@ -281,7 +329,7 @@ li::before {
 
 /* ------------------------------------------------------------------------------------------------------------ */
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 59em) {
   /* styles for mobile devices */
   body {
     padding: 0;
@@ -317,6 +365,41 @@ li::before {
     padding: 0;
     margin: 0;
   }
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 6.4rem;
+  }
+  .hero-img {
+    width: 100%;
+  }
+  html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50%;
+  }
+  .main-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .btn-mobile-nav {
+    display: block;
+  }
+  /*
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  } */
 
   /* CSS */
   /* CSS */
