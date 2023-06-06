@@ -64,3 +64,12 @@ buttons.forEach((button, index) => {
 // btnMobileNav.addEventListener("click", function () {
 //   mainElement.classList.toggle("hidden");
 // });
+
+///make mobile navigation work////////////////////////////////////
+const btnNavEl = document.querySelector(".btn-mobile-nav");
+const headerEl = document.querySelector(".header");
+// const mainElement = document.querySelector("main");
+btnNavEl.addEventListener("click", function () {
+  headerEl.classList.toggle("nav-open");
+  // mainElement.classList.toggle("hidden");
+});
